@@ -627,7 +627,7 @@ with tab2:
     st.dataframe(
         df_brand_summary.sort_values(by="ROAS", ascending=False).style.format({
             "Spend": "${:,.2f}", "Revenue": "${:,.2f}", "ROAS": "{:.2f}x", "CAC": "${:.2f}", "CTR (%)": "{:.2f}%", "CPC ($)": "${:.2f}"
-        }).background_gradient(subset=["ROAS"], cmap="viridis"),
+        }),
         use_container_width=True
     )
     
